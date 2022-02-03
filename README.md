@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/Ri7ay/LinkShortener/actions/workflows/go.yml/badge.svg)](
 https://github.com/Ri7ay/LinkShortener/actions/workflows/go.yml)
 
-### Интрфейс работы
+### Интерфейс работы
 
 Сервиc принимаeт следующие запросы по http:
 
