@@ -1,0 +1,4 @@
+CREATE TABLE surls (
+    shorturl VARCHAR(255) NOT NULL UNIQUE,
+    url VARCHAR(255) NOT NULL UNIQUE
+);
