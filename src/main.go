@@ -90,8 +90,7 @@ func main() {
 	port := os.Getenv("PORT")
 	db := connectDB()
 	defer db.Close()
-	flagDB := os.Getenv("DBFLAG")
-	if flagDB == "true" {
+	if flagDB := os.Getenv("DBFLAG"); flagDB == "true" {
 		data = &dataInSQL{db: db}
 	} else {
 		data = &dataInMem{
@@ -99,6 +98,7 @@ func main() {
 			KeyURL: make(map[string]string),
 		}
 	}
+	
 	http.HandleFunc("/", handleSwitch)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		panic("error!")
