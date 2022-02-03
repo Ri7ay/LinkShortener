@@ -13,7 +13,7 @@ services:
       - WAIT_HOSTS=postgres:5432
       - POSTGRES_HOST=postgres
       - PORT=8080
-      - DBFLAG=false
+      - DBFLAG=true
   postgres:
     restart: always
     hostname: postgres
